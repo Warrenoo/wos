@@ -50,7 +50,7 @@ dd MBOOT_CHECKSUM       ; 检测数值，其含义在定义处
 
 
 start:
-    cli                      ;关闭中断
+    cli                      ; 关闭中断
     mov esp, STACK_TOP       ; 设置内核栈地址
     mov ebp, 0               ; 帧指针修改为 0
     and esp, 0FFFFFFF0H      ; 栈地址按照16字节对齐

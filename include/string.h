@@ -3,6 +3,12 @@
 
 #include "types.h"
 
+inline void tostring(char *str, int32_t value);
+
+inline int32_t toint(const char *str);
+
+inline void invert(char *str);
+
 inline void memcpy(uint8_t *dest, const uint8_t *src, uint32_t len);
 
 inline void memset(void *dest, uint8_t val, uint32_t len);
